@@ -2,7 +2,6 @@
 
 
 
-![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
 
 ![tlea](https://user-images.githubusercontent.com/81245999/174357036-861e51e0-e0a9-477f-81e8-678d1bbaa8d1.png)
 
