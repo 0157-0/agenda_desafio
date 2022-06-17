@@ -6,7 +6,6 @@
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 <!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
 * Você instalou a versão mais recente de `<ReactJs / React-Dom / Axios>`
-* Você tem uma máquina `<Windows / Linux / Mac>`. Indique qual sistema operacional é compatível / não compatível.
 * Outros: Bootstrap, Formik, Autenticação com Context API, Hooks, ViaCepAPI.
 
 ### Ajustes e melhorias
