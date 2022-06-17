@@ -1,0 +1,10 @@
+.estilo {
+    display: block;
+    text-decoration: none;
+    color:  white;
+}
+
+.estilo a:hover {
+    text-decoration: none;
+    color: greenyellow;
+}

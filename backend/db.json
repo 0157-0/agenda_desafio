@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Rodrigo Andrade",
+      "tel": 21123456,
+      "bairro": "Ouro Preto",
+      "cidade": "Nova Iguaçu"
+    },
+    {
+      "id": 2,
+      "name": "Marcos Silva",
+      "tel": 22123456,
+      "bairro": "Dell Castilho",
+      "cidade": "Rio de Janeiro"
+    },
+    {
+      "name": "Ana Santos",
+      "tel": "11478920",
+      "id": 3,
+      "bairro": "Maracanã",
+      "cidade": "Rio de Janeiro"
+    }
+  ]
+}
