@@ -17,8 +17,9 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Responsivo
 - [x] ViaCepAPI
 - [x] CRUD
-- [ ]  VExpenses API
-- [ ]  Busca de contatos com sugestão de pesquisa
+- [x] Animação entre as páginas
+- [x] Adição de um campo extra na agenda
+- [x] Adição de uma nova página /TAREFAS/
 
 
 
