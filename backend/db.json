@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Rodrigo Andrade",
-      "tel": 21123456,
+      "tel": "2112348888",
       "bairro": "Ouro Preto",
       "cidade": "Nova Iguaçu"
     },
@@ -19,7 +19,17 @@
       "tel": "11478920",
       "id": 3,
       "bairro": "Maracanã",
-      "cidade": "Rio de Janeiro"
+      "cidade": "Rio de Janeiro",
+      "mais": "Trabalho"
+    },
+    {
+      "name": "Teste",
+      "tel": "4655654",
+      "cep": "",
+      "bairro": "Morumbi",
+      "cidade": "São Paulo",
+      "mais": "Estádio",
+      "id": 4
     }
   ]
 }

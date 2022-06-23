@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react'
 import Axios from 'axios'
 import { Formik, Field, Form } from 'formik';
 import Main from '../../components/template/Main';
@@ -14,7 +14,7 @@ const headerProps = {
 
 const baseUrl = 'http://localhost:3002/users'
 const initialState = {
-    user: { name: '', tel: '', cep: '', bairro: '', cidade: ''},
+    user: { name: '', tel: '', cep: '', bairro: '', cidade: '', mais: ''},
     list: []
 }
 
@@ -64,10 +64,11 @@ export default class UserCrud extends Component {
     }
 
     
+    
 
     renderForm(){
 
-       
+
         class onSubmit {
             
             constructor(values, _actions) {
@@ -102,8 +103,8 @@ export default class UserCrud extends Component {
                 
               });
           }
-     
-        
+          
+          
         
         return(
             
@@ -116,9 +117,13 @@ export default class UserCrud extends Component {
                 bairro: '',
                 cidade: '',
               }}
+
+              
+
               
               render={({ setFieldValue, values, user }) => (
                
+                
                   
                 <div className="form">
 
@@ -160,7 +165,16 @@ export default class UserCrud extends Component {
        </div>
     </div> 
 
+    <div className="col-12 col-md-6">
+        <div className="form-group">
+            <label>Comentário</label>
+            <input type="text" className="form-control" name="mais" value={this.state.user.mais} onChange={e => this.updateFild(e)} placeholder="Comentário extra..." />
+       </div>
+    </div>
+
 </div>
+
+                
 <hr />
 <div className="row">
     <div className="col-12 d-flex justify-content-end">
@@ -173,10 +187,14 @@ export default class UserCrud extends Component {
          onClick={e => this.clear(e)}>
             Cancelar
         </button>
+
+        
+        
     </div>
 </div>    
-           
+
 </div>
+
                   
               )}
             />
@@ -197,7 +215,9 @@ export default class UserCrud extends Component {
     }
 
     renderTable(){
+
         return (
+            
             <table className="table mt-4">
                 <thead>
                     <tr>
@@ -206,6 +226,7 @@ export default class UserCrud extends Component {
                         <th>Telefone</th>
                         <th>Bairro</th>
                         <th>Cidade</th>
+                        <th>Extra</th>
                         <th>Ações</th>
                     </tr>
                 </thead>
@@ -219,12 +240,14 @@ export default class UserCrud extends Component {
     renderRows() {
         return this.state.list.map(user => {
             return ( 
+                
                 <tr key={user.id}>
                     <td>{user.id}</td>
                     <td>{user.name}</td>
                     <td>{user.tel}</td>
                     <td>{user.bairro}</td>
                     <td>{user.cidade}</td>
+                    <td>{user.mais}</td>
 
                     <td>
                         <button className="btn btn-warning"
@@ -236,8 +259,9 @@ export default class UserCrud extends Component {
                             <i className="fa fa-trash"></i>
                         </button>
                     </td>
-
+                   
                 </tr>
+                
             )
         })
     }

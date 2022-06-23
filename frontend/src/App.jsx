@@ -11,15 +11,15 @@ import Nav from "./components/template/Nav";
 import Footer from "./components/template/Footer";
 import Main from "./components/template/Main";
 import Home from "./pages/Home/Home";
-
-
+import history from './components/template/history'
+import './styles/animation.css'
 
 
 
 
 export default props =>
 
-<BrowserRouter>
+<BrowserRouter history={history}>
 <AuthProvider>
 
 <div className="app">
